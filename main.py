@@ -58,7 +58,7 @@ def write_csv(data):
 					
 def main():
 
-    directories = get_dirs('/home/netrebin/projects/WASLogsApp/test/')
+    directories = get_dirs('/home/test/')
     for directory in directories:
         log_files = get_files(directory, 'AboutThisProfile.txt', 'SystemOut*.log')
         info_list = parse_info_file(log_files[0], pattern_host_name, pattern_profile_name)
